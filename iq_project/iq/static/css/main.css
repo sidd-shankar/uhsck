@@ -1,0 +1,31 @@
+.theme
+{
+  background: #20263B;
+}
+
+.theme-text
+{
+  color: #FEFCFB;
+}
+
+.sidenav-theme
+{
+  background: #07458F;
+}
+
+.img-center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@font-face {
+  font-family: ntnxFont;
+  src: url('../fonts/Gotham-Book.otf');
+}
+
+body {
+  font-family: ntnxFont;
+}

@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Iron Query</title>
+
+    <!-- Importing Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Importing Materialize CSS Stylesheet -->
+    <link type="text/css" rel="stylesheet" href='{% static "/css/materialize.min.css" %}' />
+
+    <!-- Importing jQuery -->
+    <script type="text/javascript" src='{% static "/js/jquery-3.3.1.min.js" %}'></script>
+
+    <!-- Importing Charts JS -->
+    <script type="text/javascript" src='{% static "/js/charts.min.js" %}'></script>
+
+    <!-- Importing Custom CSS -->
+    <link type="text/css" rel="stylesheet" href='{% static "/css/main.css" %}' />
+
+  </head>
+  <body style="background:#278DAA;">
+
+    <!-- Main Navbar -->
+    <!-- <nav class="theme">
+      <a href="#" class="brand-logo center">
+        <img src="{% static 'img/ntnx-logo-white.png' %}"
+         alt="NUTANIX" style="height:30px"/>
+      </a>
+    </nav> -->
+    <!-- Title Navbar -->
+    <nav class="theme" style="border:none; z-index:0">
+      <a href="#" class="brand-logo center">Iron Query</a>
+    </nav>
+
+    <div class="container theme-text" style="margin-top:20px">
+      <form class="" action="index.html" method="post">
+        <h5 class="center">Enter the Query!</h5>
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <textarea name="name" rows="8" cols="80" style="height:200px; color:white"></textarea>
+          </div>
+          <br>
+          <div class="col s12 m12 l12 center">
+            <button class="btn waves-effect waves-light" style="background:#173363" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+        <h5 class="center">Results</h5>
+        <div class="row">
+
+        </div>
+      </form>
+    </div>
+
+    <!-- Importing Materialize CSS Javascript -->
+    <script type="text/javascript" src='{% static "/js/materialize.min.js" %}'>
+    </script>
+  </body>
+</html>
