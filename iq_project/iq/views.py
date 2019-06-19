@@ -30,14 +30,22 @@ def graphData(request,query):
     output = []
     for res in response:
        print(res.oRecordData)
-    return JsonResponse(output, safe=False)
+
+    data = {
+        'name': 'Vitor',
+        'location': 'Finland',
+        'is_active': True,
+        'count': 28
+    }
+    return JsonResponse(data, safe=False)
 
 def options(request,pq):
     client = pyorient.OrientDB("localhost", 2424)
     session_id = client.connect("root", "rootpwd")
     # client.db_create("testdb", pyorient.DB_TYPE_GRAPH, pyorient.STORAGE_TYPE_MEMORY)
     client.db_open("testdb", "root", "rootpwd")
-    return JsonResponse(pq, safe=False)
+    dummy_list = ["one","two","three"]
+    return JsonResponse(dummy_list, safe=False)
 
 def find_between( s, first, last ):
     try:
