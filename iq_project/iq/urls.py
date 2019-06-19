@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('response', views.graphData, name='response'),
-    path('list',views.options,name='list')
+    path('response/<str:query>', views.graphData, name='response'),
+    path('list/<str:pq>',views.options,name='list')
 ]
